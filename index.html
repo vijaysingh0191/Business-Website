@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine With Shah - Premium Salon in Vaishali Ghaziabad | Bridal Makeup & Grooming Services</title>
+    <meta name="description" content="Shine With Shah offers premium beauty & grooming services at affordable prices in Vaishali, Ghaziabad. Men's haircut ₹99, Bridal makeup from ₹10,999. Book now!">
+    <meta name="keywords" content="salon in Vaishali Ghaziabad, bridal makeup Ghaziabad, affordable salon services Ghaziabad, men haircut Vaishali, beauty salon Ghaziabad">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        'gold-light': '#F4E4BC',
+                        'gold-dark': '#B8941F'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-gold {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E4BC 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .floating-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #D4AF37;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Floating Call Button -->
+    <a href="tel:9142509171" class="floating-btn bg-gold text-white p-4 rounded-full shadow-lg hover:bg-gold-dark">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+        </svg>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="bg-black text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-gradient">SWS</div>
+                    <div class="ml-2 text-sm text-gold">Shine With Shah</div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link hover:text-gold px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#about" class="nav-link hover:text-gold px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#services" class="nav-link hover:text-gold px-3 py-2 text-sm font-medium">Services</a>
+                        <a href="#gallery" class="nav-link hover:text-gold px-3 py-2 text-sm font-medium">Gallery</a>
+                        <a href="#contact" class="nav-link hover:text-gold px-3 py-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-black">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-base font-medium hover:text-gold">Home</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium hover:text-gold">About</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium hover:text-gold">Services</a>
+                <a href="#gallery" class="block px-3 py-2 text-base font-medium hover:text-gold">Gallery</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium hover:text-gold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="relative bg-gradient-to-br from-black via-gray-900 to-black min-h-screen flex items-center">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <div class="mb-8">
+                <h1 class="text-6xl md:text-8xl font-bold text-gradient mb-4">SWS</h1>
+                <p class="text-xl md:text-2xl text-gold mb-2">Shine With Shah</p>
+                <h2 class="text-3xl md:text-5xl font-light mb-6">Redefining Beauty & Grooming</h2>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Premium salon services for Men & Women at affordable prices in Vaishali, Ghaziabad</p>
+            </div>
+            <button onclick="scrollToSection('contact')" class="gradient-gold text-black px-8 py-4 rounded-full text-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                Book Your Appointment
+            </button>
+            
+            <!-- Quick Services -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg hover:bg-opacity-20 transition-all duration-300">
+                    <div class="text-3xl mb-2">✂</div>
+                    <h3 class="font-semibold text-gold">Haircut</h3>
+                    <p class="text-sm">From ₹99</p>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg hover:bg-opacity-20 transition-all duration-300">
+                    <div class="text-3xl mb-2">💄</div>
+                    <h3 class="font-semibold text-gold">Makeup</h3>
+                    <p class="text-sm">From ₹5999</p>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg hover:bg-opacity-20 transition-all duration-300">
+                    <div class="text-3xl mb-2">💅</div>
+                    <h3 class="font-semibold text-gold">Nails</h3>
+                    <p class="text-sm">From ₹99</p>
+                </div>
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm p-6 rounded-lg hover:bg-opacity-20 transition-all duration-300">
+                    <div class="text-3xl mb-2">🧔</div>
+                    <h3 class="font-semibold text-gold">Grooming</h3>
+                    <p class="text-sm">From ₹99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">About <span class="text-gradient">Shine With Shah</span></h2>
+                <div class="w-24 h-1 gradient-gold mx-auto mb-8"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-900">Premium Beauty & Grooming Services</h3>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        Shine With Shah is dedicated to providing premium beauty and grooming services at affordable prices. Located in the heart of Vaishali, Ghaziabad, we offer a complete range of salon services for both men and women.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                        Our experienced team ensures every client receives personalized attention and leaves feeling confident and beautiful. From everyday grooming to special occasion styling, we're here to make you shine.
+                    </p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h4 class="text-xl font-semibold mb-4 text-gold">Meet Our Director</h4>
+                        <p class="text-gray-700 mb-2"><strong>Surender Shah</strong></p>
+                        <p class="text-gray-600">Passionate about beauty and grooming with years of experience in the industry.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h4 class="text-xl font-semibold mb-6 text-gold">Contact Information</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-gold mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Vaishali, Ghaziabad, 201010</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-gold mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                            </svg>
+                            <div>
+                                <a href="tel:9142509171" class="hover:text-gold">9142509171</a><br>
+                                <a href="tel:9266471773" class="hover:text-gold">9266471773</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-gold mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                            <a href="mailto:meakashshah218@gmail.com" class="hover:text-gold">meakashshah218@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our <span class="text-gradient">Services</span></h2>
+                <div class="w-24 h-1 gradient-gold mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Professional beauty and grooming services at affordable prices</p>
+            </div>
+
+            <!-- Men's Services -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-center mb-12 text-gray-900">Men's Services</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">✂</div>
+                        <h4 class="text-xl font-semibold mb-2">Hair Cutting</h4>
+                        <p class="text-2xl font-bold text-gold mb-4">₹99</p>
+                        <p class="text-gray-600 mb-4">Professional haircuts tailored to your style</p>
+                        <button onclick="bookService('Men Hair Cutting')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                    
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">🎨</div>
+                        <h4 class="text-xl font-semibold mb-2">Hair Colour</h4>
+                        <p class="text-2xl font-bold text-gold mb-4">Depends on length</p>
+                        <p class="text-gray-600 mb-4">Professional hair coloring services</p>
+                        <button onclick="bookService('Men Hair Colour')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                    
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">🚿</div>
+                        <h4 class="text-xl font-semibold mb-2">Hair Wash</h4>
+                        <p class="text-2xl font-bold text-gold mb-4">₹99</p>
+                        <p class="text-gray-600 mb-4">Refreshing hair wash with premium products</p>
+                        <button onclick="bookService('Men Hair Wash')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                    
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">🧔</div>
+                        <h4 class="text-xl font-semibold mb-2">Beard Trimming</h4>
+                        <p class="text-2xl font-bold text-gold mb-4">₹99</p>
+                        <p class="text-gray-600 mb-4">Perfect beard shaping and trimming</p>
+                        <button onclick="bookService('Beard Trimming')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                    
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">🪒</div>
+                        <h4 class="text-xl font-semibold mb-2">Shaving</h4>
+                        <p class="text-2xl font-bold text-gold mb-4">₹99</p>
+                        <p class="text-gray-600 mb-4">Clean, smooth professional shaving</p>
+                        <button onclick="bookService('Shaving')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Women's Services -->
+            <div>
+                <h3 class="text-3xl font-bold text-center mb-12 text-gray-900">Women's Services</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">✂</div>
+                        <h4 class="text-xl font-semibold mb-2">Hair Cutting</h4>
+                        <p class="text-2xl font-bold text-gold mb-4">₹199</p>
+                        <p class="text-gray-600 mb-4">Stylish cuts for every occasion</p>
+                        <button onclick="bookService('Women Hair Cutting')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                    
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">🎨</div>
+                        <h4 class="text-xl font-semibold mb-2">Hair Color</h4>
+                        <p class="text-2xl font-bold text-gold mb-4">₹1999</p>
+                        <p class="text-gray-600 mb-4">Premium hair coloring services</p>
+                        <button onclick="bookService('Women Hair Color')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                    
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">💇‍♀</div>
+                        <h4 class="text-xl font-semibold mb-2">Hair Styling</h4>
+                        <p class="text-lg font-bold text-gold mb-2">Basic: ₹299</p>
+                        <p class="text-lg font-bold text-gold mb-4">Advance: ₹499</p>
+                        <p class="text-gray-600 mb-4">Professional styling for any event</p>
+                        <button onclick="bookService('Hair Styling')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                    
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">💅</div>
+                        <h4 class="text-xl font-semibold mb-2">Nail Art</h4>
+                        <p class="text-lg font-bold text-gold mb-2">Basic: ₹699</p>
+                        <p class="text-lg font-bold text-gold mb-4">Advance: ₹1299</p>
+                        <p class="text-gray-600 mb-4">Creative nail designs and art</p>
+                        <button onclick="bookService('Nail Art')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                    
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">💅</div>
+                        <h4 class="text-xl font-semibold mb-2">Simple Nails</h4>
+                        <p class="text-2xl font-bold text-gold mb-4">₹99</p>
+                        <p class="text-gray-600 mb-4">Basic nail care and polish</p>
+                        <button onclick="bookService('Simple Nails')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                    
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">💄</div>
+                        <h4 class="text-xl font-semibold mb-2">Party Makeup</h4>
+                        <p class="text-2xl font-bold text-gold mb-4">₹5999</p>
+                        <p class="text-gray-600 mb-4">Glamorous makeup for parties</p>
+                        <button onclick="bookService('Party Makeup')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                    
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">👰</div>
+                        <h4 class="text-xl font-semibold mb-2">Bridal Look</h4>
+                        <p class="text-2xl font-bold text-gold mb-4">₹10,999</p>
+                        <p class="text-gray-600 mb-4">Complete bridal makeup package</p>
+                        <button onclick="bookService('Bridal Look')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                    
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">✨</div>
+                        <h4 class="text-xl font-semibold mb-2">Airbrush Makeup</h4>
+                        <p class="text-2xl font-bold text-gold mb-4">₹24,999</p>
+                        <p class="text-gray-600 mb-4">Premium airbrush makeup service</p>
+                        <button onclick="bookService('Airbrush Makeup')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                    
+                    <div class="service-card bg-gray-50 p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">👑</div>
+                        <h4 class="text-xl font-semibold mb-2">Classic Bride</h4>
+                        <p class="text-2xl font-bold text-gold mb-4">₹12,000</p>
+                        <p class="text-gray-600 mb-4">Timeless bridal makeup look</p>
+                        <button onclick="bookService('Classic Bride')" class="w-full gradient-gold text-black py-2 px-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our <span class="text-gradient">Gallery</span></h2>
+                <div class="w-24 h-1 gradient-gold mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600">Showcasing our beautiful work</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Placeholder Gallery Items -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-64 bg-gradient-to-br from-gold-light to-gold flex items-center justify-center">
+                        <div class="text-center text-gray-700">
+                            <div class="text-4xl mb-2">✂</div>
+                            <p class="font-semibold">Stylish Haircuts</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Modern Haircuts</h3>
+                        <p class="text-gray-600">Professional styling for men and women</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-64 bg-gradient-to-br from-gold-light to-gold flex items-center justify-center">
+                        <div class="text-center text-gray-700">
+                            <div class="text-4xl mb-2">💅</div>
+                            <p class="font-semibold">Nail Art Designs</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Creative Nail Art</h3>
+                        <p class="text-gray-600">Beautiful and intricate nail designs</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-64 bg-gradient-to-br from-gold-light to-gold flex items-center justify-center">
+                        <div class="text-center text-gray-700">
+                            <div class="text-4xl mb-2">👰</div>
+                            <p class="font-semibold">Bridal Makeup</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Bridal Looks</h3>
+                        <p class="text-gray-600">Stunning bridal makeup transformations</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-64 bg-gradient-to-br from-gold-light to-gold flex items-center justify-center">
+                        <div class="text-center text-gray-700">
+                            <div class="text-4xl mb-2">💄</div>
+                            <p class="font-semibold">Party Makeup</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Glamorous Looks</h3>
+                        <p class="text-gray-600">Perfect makeup for special occasions</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-64 bg-gradient-to-br from-gold-light to-gold flex items-center justify-center">
+                        <div class="text-center text-gray-700">
+                            <div class="text-4xl mb-2">🧔</div>
+                            <p class="font-semibold">Men's Grooming</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Beard Styling</h3>
+                        <p class="text-gray-600">Professional beard trimming and styling</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="h-64 bg-gradient-to-br from-gold-light to-gold flex items-center justify-center">
+                        <div class="text-center text-gray-700">
+                            <div class="text-4xl mb-2">🎨</div>
+                            <p class="font-semibold">Hair Coloring</p>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg mb-2">Hair Color Transformations</h3>
+                        <p class="text-gray-600">Beautiful hair color results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Frequently Asked <span class="text-gradient">Questions</span></h2>
+                <div class="w-24 h-1 gradient-gold mx-auto mb-8"></div>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-2 text-gold">What is the cost of a men's haircut?</h3>
+                    <p class="text-gray-700">Our men's haircut service is priced at just ₹99, offering professional styling at an affordable rate.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-2 text-gold">Do you provide bridal makeup packages?</h3>
+                    <p class="text-gray-700">Yes, we offer comprehensive bridal makeup packages starting from ₹10,999, including our Classic Bride package at ₹12,000 and premium Airbrush Makeup at ₹24,999.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-2 text-gold">Do you offer home service?</h3>
+                    <p class="text-gray-700">Please contact us at 9142509171 or 9266471773 to discuss home service availability for your specific requirements.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-2 text-gold">What are your operating hours?</h3>
+                    <p class="text-gray-700">Please call us at 9142509171 to confirm our current operating hours and book your appointment.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold mb-2 text-gold">Do you accept advance bookings?</h3>
+                    <p class="text-gray-700">Yes, we recommend advance booking especially for bridal and party makeup services. Contact us to secure your preferred date and time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Contact <span class="text-gradient">Us</span></h2>
+                <div class="w-24 h-1 gradient-gold mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600">Get in touch to book your appointment</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg mb-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-gold">Visit Our Salon</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-gold mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold">Address</p>
+                                    <p class="text-gray-600">Vaishali, Ghaziabad, 201010</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-gold mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold">Phone Numbers</p>
+                                    <p><a href="tel:9142509171" class="text-gold hover:underline">9142509171</a></p>
+                                    <p><a href="tel:9266471773" class="text-gold hover:underline">9266471773</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg class="w-6 h-6 text-gold mr-3 mt-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold">Email</p>
+                                    <p><a href="mailto:meakashshah218@gmail.com" class="text-gold hover:underline">meakashshah218@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Map -->
+                    <div class="bg-white p-4 rounded-lg shadow-lg">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.48129308136!2d77.04417!3d28.6139391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sVaishali%2C%20Ghaziabad%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1635000000000!5m2!1sen!2sin"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="rounded-lg">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-gold">Book Your Appointment</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Required *</label>
+                            <select id="service" name="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent">
+                                <option value="">Select a service</option>
+                                <option value="Men Hair Cutting">Men Hair Cutting - ₹99</option>
+                                <option value="Men Hair Colour">Men Hair Colour</option>
+                                <option value="Men Hair Wash">Men Hair Wash - ₹99</option>
+                                <option value="Beard Trimming">Beard Trimming - ₹99</option>
+                                <option value="Shaving">Shaving - ₹99</option>
+                                <option value="Women Hair Cutting">Women Hair Cutting - ₹199</option>
+                                <option value="Women Hair Color">Women Hair Color - ₹1999</option>
+                                <option value="Hair Styling Basic">Hair Styling Basic - ₹299</option>
+                                <option value="Hair Styling Advance">Hair Styling Advance - ₹499</option>
+                                <option value="Nail Art Basic">Nail Art Basic - ₹699</option>
+                                <option value="Nail Art Advance">Nail Art Advance - ₹1299</option>
+                                <option value="Simple Nails">Simple Nails - ₹99</option>
+                                <option value="Party Makeup">Party Makeup - ₹5999</option>
+                                <option value="Bridal Look">Bridal Look - ₹10,999</option>
+                                <option value="Airbrush Makeup">Airbrush Makeup - ₹24,999</option>
+                                <option value="Classic Bride">Classic Bride - ₹12,000</option>
+                            </select>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="date" class="block text-sm font-medium text-gray-700 mb-2">Preferred Date</label>
+                                <input type="date" id="date" name="date" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="time" class="block text-sm font-medium text-gray-700 mb-2">Preferred Time</label>
+                                <input type="time" id="time" name="time" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Additional Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent" placeholder="Any special requirements or questions..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full gradient-gold text-black py-3 px-6 rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                            Send Booking Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="text-3xl font-bold text-gradient">SWS</div>
+                        <div class="ml-2 text-gold">Shine With Shah</div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Premium beauty and grooming services at affordable prices in Vaishali, Ghaziabad.</p>
+                    <div class="flex space-x-4">
+                        <a href="tel:9142509171" class="text-gold hover:text-gold-light">📞 9142509171</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gold">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-gold">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-gold">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-gold">Services</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-gold">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-gold">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gold">Popular Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Men's Haircut - ₹99</li>
+                        <li>Women's Haircut - ₹199</li>
+                        <li>Bridal Makeup - ₹10,999</li>
+                        <li>Party Makeup - ₹5,999</li>
+                        <li>Nail Art - From ₹699</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Shine With Shah. All rights reserved. | Salon in Vaishali Ghaziabad</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Add smooth scrolling to all navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Book service function
+        function bookService(serviceName) {
+            // Scroll to contact form
+            document.getElementById('contact').scrollIntoView({
+                behavior: 'smooth'
+            });
+            
+            // Pre-fill the service in the form
+            setTimeout(() => {
+                const serviceSelect = document.getElementById('service');
+                const options = serviceSelect.options;
+                for (let i = 0; i < options.length; i++) {
+                    if (options[i].value.includes(serviceName)) {
+                        serviceSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }, 500);
+        }
+
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            const service = formData.get('service');
+            const date = formData.get('date');
+            const time = formData.get('time');
+            const message = formData.get('message');
+            
+            // Create WhatsApp message
+            let whatsappMessage = Hello! I would like to book an appointment at Shine With Shah.\n\n;
+            whatsappMessage += Name: ${name}\n;
+            whatsappMessage += Phone: ${phone}\n;
+            whatsappMessage += Service: ${service}\n;
+            if (date) whatsappMessage += Preferred Date: ${date}\n;
+            if (time) whatsappMessage += Preferred Time: ${time}\n;
+            if (message) whatsappMessage += Message: ${message}\n;
+            
+            // Open WhatsApp with pre-filled message
+            const whatsappUrl = https://wa.me/919142509171?text=${encodeURIComponent(whatsappMessage)};
+            window.open(whatsappUrl, '_blank');
+            
+            // Show success message
+            alert('Thank you! You will be redirected to WhatsApp to complete your booking request.');
+        });
+
+        // Set minimum date to today for date input
+        document.addEventListener('DOMContentLoaded', function() {
+            const dateInput = document.getElementById('date');
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'980a17aea122a76d',t:'MTc1ODEyNzcyMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
